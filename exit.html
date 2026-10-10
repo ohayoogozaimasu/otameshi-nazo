@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お試し謎</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>お試し謎</h1>
+    </header>
+
+    <main>
+        <p>
+            これで最後だよ。<br>
+            答えが分かったら下の入力欄にひらがなで入力して、回答ボタンを押そう。<br>
+            クリア目指して頑張ってね！
+        </p>
+
+        <section class="question">
+            <img
+                src="images\Q4.jpg"
+                alt="Q4"
+                class="question-image"
+            >
+        </section>
+
+        <div class="answer-area">
+            <input type="text" id="answer" placeholder="答えを入力">
+            <button id="answerButton">回答する</button>
+
+            <p id="message"></p>
+        </div>
+    </main>
+
+    <script src="js/nazo.js"></script>
+    <script>
+        setupQuestion("てんごく", "heaven.html");
+    </script>
+
+</body>
+</html>

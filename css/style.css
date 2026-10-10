@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #000;
+    background: #fff;
+}
+
+header {
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.question {
+    margin-top: 30px;
+}
+
+.question h2 {
+    margin-bottom: 15px;
+}
+
+.question-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* PCなど、画面幅が1024px以上の場合 */
+@media (min-width: 1024px) {
+    .question-image {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+.image-placeholder {
+    width: 100%;
+    max-width: 1280px;
+    aspect-ratio: 16 / 9;
+    border: 1px solid #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer-area {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.answer-area input {
+    width: min(300px, 70%);
+    padding: 8px;
+    font-size: 16px;
+}
+
+.answer-area button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 10px;
+}
+
+.link-button-area {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    color: #000;
+    text-decoration: none;
+}
